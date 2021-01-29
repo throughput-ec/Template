@@ -14,7 +14,7 @@ A short, one paragraph description of the project goes here.
 
 This project is an open project, and contributions are welcome from any individual.  All contributors to this project are bound by a [code of conduct](CODE_OF_CONDUCT.md).  Please review and follow this code of conduct as part of your contribution.
 
-  * [Ethan Yackulic](http://example.com/contributor_url1) [![orcid](https://img.shields.io/badge/orcid-XXXX--XXXX--XXXX--XXXX-brightgreen.svg)](https://orcid.org/0000-0001-5500-0401)
+  * [Ethan Yackulic](http://example.com/contributor_url1) [![orcid](https://img.shields.io/badge/orcid-0000--0001--5500--0401-brightgreen.svg)](https://orcid.org/0000-0001-5500-0401)
   * [Contributor Name2](http://example.com/contributor_url2) [![orcid](https://img.shields.io/badge/orcid-XXXX--XXXX--XXXX--XXXX-brightgreen.svg)](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
 
 ### Tips for Contributing
