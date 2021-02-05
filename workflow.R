@@ -4,13 +4,13 @@
 #maybe create for loop that looks first for condition and then creates annotation if ==yes
 
 
-#remotes::install_github("nickmckay/lipd-utilities",subdir = "R")
-#remotes::install_github("nickmckay/nuspectral")
-#remotes::install_github("nickmckay/geoChronR")
-#install_github("nickmckay/LiPD-Utilities", subdir = "R")
+remotes::install_github("nickmckay/lipd-utilities",subdir = "R")
+remotes::install_github("nickmckay/nuspectral")
+remotes::install_github("nickmckay/geoChronR")
+install_github("nickmckay/LiPD-Utilities", subdir = "R")
 
 library(geoChronR)
-#library(devtools)
+library(devtools)
 library(lipdR)
 library(dplyr)
 
