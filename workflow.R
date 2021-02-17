@@ -27,6 +27,11 @@ naz <-  t2[is.na(t2$geo_description), ]
 da <- subset(D, names(D) %in% naz$dataSetName)
 
 output <- da %>% 
-  map(function(x) {
-    createThroughputJson(L = x)
+  purrr::map(function(x) {
+    createThroughputJson(lipdObject = da,additionalType = additionalType,body = body,tokenFile = token)
   })
+
+output
+token <- readr::read_file("token.R")
+additionalType = "http://linked.earth/ontology#Dataset"
+body = "These sites are missing a geo description"
