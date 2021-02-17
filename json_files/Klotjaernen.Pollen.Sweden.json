@@ -1,0 +1,15 @@
+{
+ "dbid": "r3d100012894",
+"orcid": "https://orcid.org/0000-0001-5500-0401",
+"objects": [
+ {
+ "type": "dataset",
+"id": "annotationId?" 
+},
+{
+ "additionalType": "http://linked.earth/ontology#Dataset",
+"dataid": "HcoRSw3bdNzaUFHfgFLt" 
+} 
+],
+"body": "These sites are missing a geo description" 
+}
