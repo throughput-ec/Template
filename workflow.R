@@ -14,6 +14,8 @@ library(lipdR)
 library(dplyr)
 library(purrr)
 
+source('src/createThroughputJson.R')
+
 D <- lipdR::readLipd("https://lipdverse.org/Temp12k/1_0_2/Temp12k1_0_2.zip")
 ts <- lipdR::extractTs(D)
 tib <- lipdR::ts2tibble(ts)
@@ -26,12 +28,13 @@ t2 <- tib %>%
 naz <-  t2[is.na(t2$geo_description), ]
 da <- subset(D, names(D) %in% naz$dataSetName)
 
+additionalType <- "http://linked.earth/ontology#Dataset"
+body <- "These sites are missing a geo description"
+
 output <- da %>% 
   purrr::map(function(x) {
-    createThroughputJson(lipdObject = da,additionalType = additionalType,body = body,tokenFile = token)
+    createThroughputJson(lipdObject = x,
+                         additionalType = additionalType,
+                         body = body,
+                         tokenFile = "token.R")
   })
-
-output
-token <- readr::read_file("token.R")
-additionalType = "http://linked.earth/ontology#Dataset"
-body = "These sites are missing a geo description"
